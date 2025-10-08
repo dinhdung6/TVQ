@@ -29,22 +29,22 @@ export default function AboutPage() {
 
   const team = [
     {
-      name: "Nguyễn Văn A",
+      name: "Lý Tấn Đạt",
       position: "CEO & Founder",
       description: "10+ năm kinh nghiệm trong lĩnh vực công nghệ và giáo dục",
-      image: "/placeholder.svg?height=300&width=300",
+      image: "/images/Asset12.jpg",
     },
     {
-      name: "Trần Thị B",
+      name: "Lưu Bá Anh",
       position: "CTO",
       description: "Chuyên gia công nghệ với nhiều năm kinh nghiệm phát triển sản phẩm",
-      image: "/placeholder.svg?height=300&width=300",
+      image: "/images/Asset13.jpg",
     },
     {
-      name: "Lê Văn C",
+      name: "Nguyễn Thắng Thành",
       position: "Head of Education",
       description: "Chuyên gia giáo dục STEAM với bằng thạc sĩ giáo dục học",
-      image: "/placeholder.svg?height=300&width=300",
+      image: "/images/Asset14.png",
     },
   ]
 
@@ -101,7 +101,7 @@ export default function AboutPage() {
             </div>
             <div className="relative">
               <Image
-                src="/placeholder.svg?height=500&width=600"
+                src="/images/Asset15.jpg"
                 alt="Our Story"
                 width={600}
                 height={500}
