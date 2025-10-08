@@ -41,7 +41,7 @@ export default function ContactPage() {
     {
       icon: <Phone className="w-6 h-6 text-blue-600" />,
       title: "Điện thoại",
-      content: "(+84) 123 456 789",
+      content: "0967692780",
     },
     {
       icon: <Mail className="w-6 h-6 text-blue-600" />,
@@ -187,9 +187,17 @@ export default function ContactPage() {
               <Card className="overflow-hidden">
                 <div className="aspect-video bg-gray-200 flex items-center justify-center">
                   <div className="text-center">
-                    <MapPin className="w-12 h-12 text-gray-400 mx-auto mb-2" />
-                    <p className="text-gray-500">Bản đồ vị trí</p>
-                    <p className="text-sm text-gray-400">69 Ái Mộ, Ngọc Lâm, Long Biên, Hà Nội</p>
+                    
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14895.147638088545!2d105.85632266330508!3d21.0412106316281!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135abd7ea4c69a1%3A0xaf596217408f3318!2zNjkgUC4gw4FpIE3hu5ksIELhu5MgxJDhu4EsIExvbmcgQmnDqm4sIEjDoCBO4buZaSwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1759928294415!5m2!1svi!2s"
+                      width={600}
+                      height={450}
+                      style={{ border: 0 }}
+                      allowFullScreen
+                      loading="lazy"
+                      referrerPolicy="no-referrer-when-downgrade"
+                      className="rounded-xl shadow-md w-full"
+                    />
                   </div>
                 </div>
               </Card>
