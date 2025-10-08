@@ -72,7 +72,7 @@ export default function HomePage() {
             <div className="relative">
               <div className="w-full h-96 bg-gradient-to-br from-blue-400 to-purple-600 rounded-3xl flex items-center justify-center">
                 <Image
-                  src="/placeholder.svg?height=400&width=400"
+                  src="/images/Asset1.png"
                   alt="Child learning"
                   width={400}
                   height={400}
@@ -138,7 +138,7 @@ export default function HomePage() {
             </div>
             <div className="relative">
               <Image
-                src="/placeholder.svg?height=400&width=600"
+                src="/images/Asset2.png"
                 alt="Technology Services"
                 width={600}
                 height={400}
@@ -166,28 +166,28 @@ export default function HomePage() {
             </div>
             <div className="grid grid-cols-2 gap-4">
               <Image
-                src="/placeholder.svg?height=200&width=200"
+                src="/images/Asset3.png"
                 alt="STEAM Education 1"
                 width={200}
                 height={200}
                 className="rounded-lg"
               />
               <Image
-                src="/placeholder.svg?height=200&width=200"
+                src="/images/Asset4.png"
                 alt="STEAM Education 2"
                 width={200}
                 height={200}
                 className="rounded-lg"
               />
               <Image
-                src="/placeholder.svg?height=200&width=200"
+                src="/images/Asset5.png"
                 alt="STEAM Education 3"
                 width={200}
                 height={200}
                 className="rounded-lg"
               />
               <Image
-                src="/placeholder.svg?height=200&width=200"
+                src="/images/Asset6.png"
                 alt="STEAM Education 4"
                 width={200}
                 height={200}
