@@ -8,10 +8,10 @@ import Footer from "@/components/footer"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Tâm Việt Quang",
+  title: "Tâm Việt Quang - Eduverse & Technology Services",
   description:
     "Công ty công nghệ giáo dục hàng đầu Việt Nam, cung cấp dịch vụ Eduverse STEAM và giải pháp công nghệ cho doanh nghiệp.",
-   
+    generator: 'v0.app'
 }
 
 export default function RootLayout({

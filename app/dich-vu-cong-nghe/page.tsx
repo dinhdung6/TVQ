@@ -41,17 +41,17 @@ export default function TechServicesPage() {
     {
       title: "Hệ thống quản lý bán hàng",
       description: "Phát triển hệ thống quản lý bán hàng tích hợp cho chuỗi cửa hàng bán lẻ",
-      image: "/images/Asset9.jpg",
+      image: "/placeholder.svg?height=300&width=400",
     },
     {
       title: "Ứng dụng học tập trực tuyến",
       description: "Xây dựng nền tảng học tập trực tuyến với tính năng tương tác cao",
-      image: "/images/Asset10.jpg",
+      image: "/placeholder.svg?height=300&width=400",
     },
     {
       title: "Website thương mại điện tử",
       description: "Thiết kế và phát triển website bán hàng online với giao diện hiện đại",
-      image: "/images/Asset11.jpg",
+      image: "/placeholder.svg?height=300&width=400",
     },
   ]
 
