@@ -11,7 +11,7 @@ import { Spinner } from '@/components/ui/spinner'
 import { BarChart3, FileText, Mail, MessageSquare } from 'lucide-react'
 
 export default function AdminDashboard() {
-  const { user, isAuthenticated, loading: authLoading } = useAuth()
+  const { user, isAuthenticated, loading: authLoading, signOut } = useAuth()
   const [stats, setStats] = useState({
     submissions: 0,
     consultations: 0,
@@ -20,6 +20,15 @@ export default function AdminDashboard() {
   })
   const [recentSubmissions, setRecentSubmissions] = useState<any[]>([])
   const [loading, setLoading] = useState(true)
+
+  const handleLogout = async () => {
+    try {
+      await signOut()
+      window.location.href = '/login'
+    } catch (error) {
+      console.error('Logout error:', error)
+    }
+  }
 
   useEffect(() => {
     if (!isAuthenticated && !authLoading) {
@@ -90,10 +99,20 @@ export default function AdminDashboard() {
   return (
     <div className="min-h-screen bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        {/* Header */}
-        <div className="mb-8">
-          <h1 className="text-3xl font-bold text-gray-900">Admin Dashboard</h1>
-          <p className="text-gray-600 mt-2">Manage your website content and submissions</p>
+        {/* Header with Logout */}
+        <div className="mb-8 flex items-center justify-between">
+          <div>
+            <h1 className="text-3xl font-bold text-gray-900">Bảng điều khiển Admin</h1>
+            <p className="text-gray-600 mt-2">Quản lý nội dung website và các submission</p>
+            <p className="text-sm text-gray-500 mt-2">Đăng nhập bằng: {user?.email}</p>
+          </div>
+          <Button
+            onClick={handleLogout}
+            variant="outline"
+            className="border-red-300 text-red-600 hover:bg-red-50"
+          >
+            Đăng xuất
+          </Button>
         </div>
 
         {/* Stats Grid */}
