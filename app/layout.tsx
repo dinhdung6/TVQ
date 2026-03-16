@@ -4,6 +4,7 @@ import { Inter } from "next/font/google"
 import "./globals.css"
 import Header from "@/components/header"
 import Footer from "@/components/footer"
+import { AuthProvider } from "@/lib/auth-context"
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -11,7 +12,6 @@ export const metadata: Metadata = {
   title: "Tâm Việt Quang - Eduverse & Technology Services",
   description:
     "Công ty công nghệ giáo dục hàng đầu Việt Nam, cung cấp dịch vụ Eduverse STEAM và giải pháp công nghệ cho doanh nghiệp.",
-    generator: 'v0.app'
 }
 
 export default function RootLayout({
@@ -22,9 +22,11 @@ export default function RootLayout({
   return (
     <html lang="vi">
       <body className={inter.className}>
-        <Header />
-        <main>{children}</main>
-        <Footer />
+        <AuthProvider>
+          <Header />
+          <main>{children}</main>
+          <Footer />
+        </AuthProvider>
       </body>
     </html>
   )
