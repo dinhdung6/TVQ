@@ -127,6 +127,13 @@ export function ContactForm() {
         />
       </div>
 
+      <Button
+        type="submit"
+        disabled={isLoading}
+        className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2"
+      >
+        {isLoading ? 'Đang gửi...' : 'Gửi tin nhắn'}
+      </Button>
       
     </form>
   )
